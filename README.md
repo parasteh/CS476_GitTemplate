@@ -1,5 +1,6 @@
 # CS476_GitTemplate
 This is a git Template for CS-476, Software Development Project Course.
+
 Department of Computer Science, University of Regina. 
 
 
