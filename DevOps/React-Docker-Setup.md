@@ -8,7 +8,24 @@ This readme file describes how to create a docker container for React.js applica
 - [Docker Runtime] - Docker desktop should be installed.
 - [React.JS Application] - A running react.js application
 
+### Creating a ReactJS App
+This tutorial shows how to create a reactJS App [Create-React-App](https://create-react-app.dev/docs/getting-started). You need to have NodeJS installed on your system for the commands to run. You can install NodeJS from [NodeJS](https://nodejs.org/en/download/). To summarize below are the syeps to create and start a ReactJS App:
 
+Create a React App using below command, *my-app* is the name of the App. This step is going to take some time to install all the dependencies that react requires. Instead of *npx*, you can use *npm* or *yarn* as well to set up a reactJS application(refer to documentation listed above).
+```sh
+npx create-react-app my-app
+```
+cd into react App
+```sh
+cd my-app
+```
+Start the ReactJS App using:
+```sh
+npm start
+```
+Click on the *url* in the console to open the ReactJS application in the browzer.
+
+### Creating Dockerfile
 Create a Dockerfile in the root directory of react.js application and paste the below contents in the newly created file.  Below is the file structure of a react.js project containing Dockerfile.
 
     .
@@ -20,7 +37,6 @@ Create a Dockerfile in the root directory of react.js application and paste the 
     ├── LICENSE
     └── README.md
 
-### Creating Dockerfile
 A *Multistaged build* is used to create a React.JS docker container. First stage is "Build Stage" and other stage is "Production Stage". Benefit of using multistaged build:
 "A multi-stage build is a process that allows you to break the steps in building a Docker image into multiple stages. This will enable you to create images that include only the dependencies that are necessary for the desired functionality of the final application, cutting down on both time and space." as described in [Dev.to docs](https://dev.to/pavanbelagatti/what-are-multi-stage-docker-builds-1mi9#:~:text=A%20multi%2Dstage%20build%20is,on%20both%20time%20and%20space.).
 Moreover in both the build and production stage we have used "alpine" as base image, that is node:lts-alpine and nginx:stable-alpine as alpine base image is linux based, more secure and very compact.
