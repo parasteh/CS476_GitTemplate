@@ -2,10 +2,6 @@
 
 This readme file describes how to create a docker container for React.js applications.
 
-## Features
-
-- Import a HTML file and watch it magically convert to Markdown
-
 
 ## Tech and Pre-requisites
 
@@ -15,14 +11,14 @@ This readme file describes how to create a docker container for React.js applica
 
 Create a Dockerfile in the root directory of react.js application and paste the below contents in the newly created file.  Below is the file structure of a react.js project containing Dockerfile.
 
-+----- Dockerfile
-+----- node_modules
-+----- package.json
-+----- package-lock.json
-+----- public
-+----- readme
-+----- src
-
+    .
+    ├── Dockerfile                   # Dockerfile with Multistaged build
+    ├── node_modules                 # Installed modules listed in package.json
+    ├── package.json                 # Depedency module with version
+    ├── package-lock.json
+    ├── src                          # Source files (alternatively `lib` or `app`)
+    ├── LICENSE
+    └── README.md
 
 ### Creating Dockerfile
 A *Multistaged build* is used to create a React.JS docker container. First stage is "Build Stage" and other stage is "Production Stage". Benefit of using multistaged build:
