@@ -20,6 +20,35 @@ Create a React App using below command, *my-app* is the name of the App. This st
 sudo apt update
 sudo apt install postgresql postgresql-contrib curl
 ```
+Lets hop into postgreSQL using below command, postgres is a default user provided by default
+```sh
+sudo -u postgres psql
+```
+Create database
+```sh
+create database <db_name>;
+```
+Create user and assign a password
+```sh
+create user <user_name> with password '<password>';
+```
+Set encoding to utf-8, although PostgreSQL use default encoding as utf-8, it is important to set this in the case if default encoding changes
+```sh
+alter role <user_name> set client_encoding to 'utf8';
+```
+Set transaction isolation
+```sh
+alter role <user_name> set default_transaction_isolation to 'read committed';
+```
+Set timezone to UTC
+```sh
+alter role <user_name> set timezone to 'UTC';
+```
+Below command gives admin access to user on the database
+```sh
+grant all privileges on database <db_name> to <user_name>;
+```
+
 ## License
 
 **Free Software, Hell Yeah!**
