@@ -39,13 +39,16 @@ The generated WAR file is present in the target folder in the project structure.
 
 ### Step 3: Install Java and Tomcat server on EC2
 1. Firstly, update the EC2 instance that we created:
-```sh sudo yum update -y
+```sh
+sudo yum update -y
 ```
 2. Install Java 8 using the below mentioned command:
-```sh yum install java-1.8.0-openjdk
+```sh 
+yum install java-1.8.0-openjdk
 ```
 3. Verify whether Java is installed properly by checking its version using the below mentioned command:
-``` java -version
+``` 
+java -version
 ```
 
 4. Visit the following link for downloading the Apache Tomcat :
