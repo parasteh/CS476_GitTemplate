@@ -1,15 +1,15 @@
-# Deploying a Spring Boot Application on AWS Elastic Cloud Compute(EC2) instance
+# 🔦 Deploying a Spring Boot Application on AWS Elastic Cloud Compute(EC2) instance
 
 In this ReadMe, I will share the steps to deploy a Spring Boot web application on Amazon EC2 instance.
 
 
-## Tech Stack used in the deployment
+## 👨‍💻 Tech Stack used in the deployment
 
 - [Java 8] - Java needs to be installed.
 - [Sprint Boot Application] - A running Sprint Boot Application
 - [Apache Tomcat] - Tomcat server for deployment
 
-### Steps for deploying the application
+### 💻 Steps for deploying the application
 	1. Create a WAR file of your Spring Boot Project
 	2. Create an EC2 instance on the AWS console
 	3. Install Java and Tomcat server on EC2
