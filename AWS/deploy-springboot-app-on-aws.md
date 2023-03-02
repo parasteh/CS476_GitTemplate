@@ -19,9 +19,23 @@ In this ReadMe I will share the steps to deploy a Spring Boot web application on
 
 
 ### Step 1: Create a WAR file of your Spring Boot Project
+In pom.xml, add war packaging configuration as shown below:
+
+<packaging>war</packaging>
+
+The screenshots are shown below:<br />
+<img src="images/mavenbuild.png" width=350 height=500 />
+
+Once you click on the Maven build, the “Edit Configuration” window will be opened. 
+Write the command “clean install” in Goals and click on Run.
+Maven Clean install on Eclipse is shown below:<br />
+<img src="images/mvncleaninstall.png" width=350 height=500 />
+
+The generated WAR file is present in the target folder in the project structure.
 
 
 ### Step 2: Create an EC2 instance on the AWS console
+
 
 
 ### Step 3: Install Java and Tomcat server on EC2
