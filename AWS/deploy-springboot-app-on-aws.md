@@ -24,7 +24,7 @@ In pom.xml, add war packaging configuration as shown below:
 Once you click on the Maven build, the “Edit Configuration” window will be opened. 
 Write the command “clean install” in Goals and click on Run.
 Maven Clean install on Eclipse is shown below:<br />
-<img src="images/mvncleaninstall.png" width=350 height=500 />
+<img src="images/mvncleaninstall.png" width=350 height=100 />
 
 The generated WAR file is present in the target folder in the project structure.
 
@@ -32,10 +32,10 @@ The generated WAR file is present in the target folder in the project structure.
 ### Step 2: Create an EC2 instance on the AWS console
 
 #### Create a Linux EC2 instance in AWS management console. 
-<img src="images/ec2.png" width=350 height=500 />
+<img src="images/ec2.png" width=350 height=200 />
 
 #### Add a rule in the security group for the port to host Spring Boot application. We are going to use the default port 8080.
-<img src="images/securitygroup.png" width=350 height=500 />
+<img src="images/securitygroup.png" width=350 height=200 />
 
 ### Step 3: Install Java and Tomcat server on EC2
 1. Firstly, update the EC2 instance that we created:
@@ -61,11 +61,13 @@ Welcome to the Apache Tomcat ® 9.x software download page. This page provides d
 <img src="images/apache.png" width=350 height=300 />
 
 6. Download the tomcat on EC2 using the below mentioned command:
-```sh wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.64/bin/apache-tomcat-9.0.64.tar.gz
+```sh 
+wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.64/bin/apache-tomcat-9.0.64.tar.gz
 ```
 
 7. Unzip the downloaded .tar.gz:
-```sh tar -zvxf apache-tomcat-9.0.72.tar.gz
+```sh 
+tar -zvxf apache-tomcat-9.0.72.tar.gz
 ```
 
 8. Now we have successfully installed Java 8 and Apache Tomcat serveron the EC2 instance. 
@@ -73,14 +75,17 @@ Welcome to the Apache Tomcat ® 9.x software download page. This page provides d
 9. Now, let us start the tomcat server and verify whether it is installed correctly by going to the below directory location:
 
 
-```sh cd apache-tomcat-9.0.64/
+```sh 
+cd apache-tomcat-9.0.64/
 ```
 
-```sh cd bin/
+```sh 
+cd bin/
 ```
 
 In the bin folder, startup.sh file is used to start the tomcat server. Run the following command to run the tomcat server.
-```sh  ./startup.sh
+```sh  
+./startup.sh
 ```
 Now, copy the public IPv4 address or public DNS address of your instance, paste it on the browser, and attach:8080 which is the port number we configured.
 for example, 12.34.56.78:8080
@@ -91,10 +96,12 @@ The following page will get displayed, if the tomcat is installed properly.<br/>
 
 ### Step 4: Give permission to the user in tomcat to access Manage apps on the GUI
 Now we will open tomcat-users.xml file which is available in the conf folder
-```sh cd conf
+```sh 
+cd conf
 ```
 Now, open the tomcat-users.xml. We can use vi editor for this task.
-```sh vi tomcat-users.xml
+```sh 
+vi tomcat-users.xml
 ```
 Add the following code to this file for creating the user and assigning the role for using Manager App in GUI for deploying the application:
 <user username="your-username" password="your-password" roles="manager-gui"/>
@@ -106,7 +113,8 @@ Now we will remove the below mentioned code from context.xml which is available 
 <Valve className="org.apache.catalina.valves.RemoteAddValve" allow="127\.\d+\.\d+|::1|0:0:0:0:0:0:0:1"/>
 
 Now, we need to shut down the tomcat and then restart it.
-```sh cd bin
+```sh 
+cd bin
 ./shutdown.sh
 ./startup.sh
 ```
@@ -120,14 +128,14 @@ Now, we need to shut down the tomcat and then restart it.
 
 <br/>
 
-<img src="images/tomcat2.png" width=350 height=300 />
+<img src="images/tomcat2.png" width=350 height=200 />
 
 5. Now verify the deployment of the  WAR file by attaching the WAR file name with the URL we created above and check it in the browser.
 Now our Spring Boot application is successfully deployed as shown in the screenshot below:
 
 <br/>
 
-<img src="images/Springbootapp.png" width=350 height=300 />
+<img src="images/Springbootapp.png" width=350 height=200 />
 
 
 
