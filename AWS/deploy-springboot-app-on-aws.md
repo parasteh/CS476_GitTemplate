@@ -19,20 +19,18 @@ In this ReadMe, I will share the steps to deploy a Spring Boot web application o
 
 
 ### Step 1: Create a WAR file of your Spring Boot Project
-In pom.xml, add war packaging configuration as shown below:
-
-Once you click on the Maven build, the “Edit Configuration” window will be opened. 
-Write the command “clean install” in Goals and click on Run.
-Maven Clean install on Eclipse<br />
-
-The generated WAR file is present in the target folder in the project structure.
+1. In pom.xml, add war packaging configuration.
+2. Once you click on the Maven build, the “Edit Configuration” window will be opened. 
+3. Write the command “clean install” in Goals and click on Run.
+4. Maven Clean install on Eclipse<br />
+5. The generated WAR file is present in the target folder in the project structure.
 
 
 ### Step 2: Create an EC2 instance on the AWS console
 
-#### Create a Linux EC2 instance in AWS management console. 
+1. Create a Linux EC2 instance in AWS management console. 
 
-#### Add a rule in the security group for the port to host Spring Boot application. We are going to use the default port 8080.
+2. Add a rule in the security group for the port to host Spring Boot application. We are going to use the default port 8080.
 
 ### Step 3: Install Java and Tomcat server on EC2
 1. Firstly, update the EC2 instance that we created:
@@ -54,7 +52,7 @@ Welcome to the Apache Tomcat ® 9.x software download page. This page provides d
 
 (https://tomcat.apache.org/download-90.cgi)
 
-5. Right-click on the tar.gz file and copy the link address of Tomcat: <br/>
+5. Right-click on the tar.gz file and copy the link address of Tomcat <br/>
 
 6. Download the tomcat on EC2 using the below mentioned command:
 ```sh 
@@ -68,7 +66,7 @@ tar -zvxf apache-tomcat-9.0.72.tar.gz
 
 8. Now we have successfully installed Java 8 and Apache Tomcat serveron the EC2 instance. 
 
-9. Now, let us start the tomcat server and verify whether it is installed correctly by going to the below directory location:
+9. Now, let us start the tomcat server and verify whether it is installed correctly by going to the below directory location.
 
 
 ```sh 
@@ -122,7 +120,7 @@ cd bin
 <br/>
 
 5. Now verify the deployment of the  WAR file by attaching the WAR file name with the URL we created above and check it in the browser.
-Now our Spring Boot application is successfully deployed:
+Now our Spring Boot application is successfully deployed!
 
 
 
