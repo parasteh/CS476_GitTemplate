@@ -24,7 +24,7 @@ In pom.xml, add war packaging configuration as shown below:
 Once you click on the Maven build, the “Edit Configuration” window will be opened. 
 Write the command “clean install” in Goals and click on Run.
 Maven Clean install on Eclipse is shown below:<br />
-<img src="images/mvncleaninstall.png" width=350 height=100 />
+<img src="images/mvncleaninstall.png" width=350 height=300 />
 
 The generated WAR file is present in the target folder in the project structure.
 
@@ -32,10 +32,10 @@ The generated WAR file is present in the target folder in the project structure.
 ### Step 2: Create an EC2 instance on the AWS console
 
 #### Create a Linux EC2 instance in AWS management console. 
-<img src="images/ec2.png" width=350 height=200 />
+<img src="images/ec2.png" width=350 height=100 />
 
 #### Add a rule in the security group for the port to host Spring Boot application. We are going to use the default port 8080.
-<img src="images/securitygroup.png" width=350 height=200 />
+<img src="images/securitygroup.png" width=350 height=100 />
 
 ### Step 3: Install Java and Tomcat server on EC2
 1. Firstly, update the EC2 instance that we created:
@@ -58,7 +58,7 @@ Welcome to the Apache Tomcat ® 9.x software download page. This page provides d
 (https://tomcat.apache.org/download-90.cgi)
 
 5. Right-click on the tar.gz file and copy the link address of Tomcat: <br/>
-<img src="images/apache.png" width=350 height=300 />
+<img src="images/apache.png" width=200 height=200 />
 
 6. Download the tomcat on EC2 using the below mentioned command:
 ```sh 
@@ -91,7 +91,7 @@ Now, copy the public IPv4 address or public DNS address of your instance, paste 
 for example, 12.34.56.78:8080
 The following page will get displayed, if the tomcat is installed properly.<br/>
 
-<img src="images/tomcat1.png" width=350 height=300 />
+<img src="images/tomcat1.png" width=200 height=200 />
 
 
 ### Step 4: Give permission to the user in tomcat to access Manage apps on the GUI
@@ -128,14 +128,14 @@ cd bin
 
 <br/>
 
-<img src="images/tomcat2.png" width=350 height=200 />
+<img src="images/tomcat2.png" width=200 height=200 />
 
 5. Now verify the deployment of the  WAR file by attaching the WAR file name with the URL we created above and check it in the browser.
 Now our Spring Boot application is successfully deployed as shown in the screenshot below:
 
 <br/>
 
-<img src="images/Springbootapp.png" width=350 height=200 />
+<img src="images/Springbootapp.png" width=200 height=200 />
 
 
 
