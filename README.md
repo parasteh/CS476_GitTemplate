@@ -35,6 +35,7 @@ Below is a list of topics that students can choose from for their contribution:
 - Front-end Development Tools & Technologies
     - HTML/CSS frameworks (e.g. Bootstrap, Foundation)
     - JavaScript frameworks & libraries (e.g. React, Vue.js, Angular)
+        - [Guide to starting with Vue3](https://github.com/PreetAsari15/CS476_GitTemplate/blob/main/VUE%20JS/GuideToVue3.md)
     - CSS preprocessors (e.g. SASS, LESS)
 
 - Back-end Development Tools & Technologies
