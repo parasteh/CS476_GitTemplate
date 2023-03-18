@@ -35,17 +35,23 @@ Below is a list of topics that students can choose from for their contribution:
 - Front-end Development Tools & Technologies
     - HTML/CSS frameworks (e.g. Bootstrap, Foundation)
     - JavaScript frameworks & libraries (e.g. React, Vue.js, Angular)
+        - [Guide to starting with Vue3](https://github.com/PreetAsari15/CS476_GitTemplate/blob/main/VUE%20JS/GuideToVue3.md)
     - CSS preprocessors (e.g. SASS, LESS)
 
 - Back-end Development Tools & Technologies
     - Server-side programming languages (e.g. Java, Python, Ruby)
     - Web servers (e.g. Apache, Nginx)
     - Databases (e.g. MySQL, MongoDB, PostgreSQL)
+        - [Setting up PostgreSQL Database on Ubuntu 16+ servers](https://github.com/parasteh/CS476_GitTemplate/blob/main/DevOps/PostgreSQL-Ubuntu-Configure.md)
 
 - DevOps Tools & Technologies
     - Containerization (e.g. Docker, Kubernetes)
+        - [Creating a React Docker Container](https://github.com/parasteh/CS476_GitTemplate/blob/main/DevOps/React-Docker-Setup.md#creating-a-react-docker-container)
+
     - Continuous Integration & Continuous Deployment (CI/CD)
     - Infrastructure as Code (e.g. Terraform, CloudFormation)
+    - Amazon Web Services (AWS)
+        - [Deploying a Spring Boot web application on Amazon EC2 instance](https://github.com/parasteh/CS476_GitTemplate/blob/main/AWS/deploy-springboot-app-on-aws.md)
 
 - Project Management Tools & Technologies
     - Agile methodologies (e.g. Scrum, Kanban)
