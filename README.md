@@ -47,7 +47,7 @@ Below is a list of topics that students can choose from for their contribution:
 - DevOps Tools & Technologies
     - Containerization (e.g. Docker, Kubernetes)
         - [Creating a React Docker Container](https://github.com/parasteh/CS476_GitTemplate/blob/main/DevOps/React-Docker-Setup.md#creating-a-react-docker-container)
-
+        - [Container Orchestration using Kubernetes](https://github.com/raghavsharma007/CS476_GitTemplate/blob/main/DevOps/Kubernetes.pdf)
     - Continuous Integration & Continuous Deployment (CI/CD)
     - Infrastructure as Code (e.g. Terraform, CloudFormation)
     - Amazon Web Services (AWS)
