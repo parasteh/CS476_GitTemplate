@@ -52,6 +52,7 @@ Below is a list of topics that students can choose from for their contribution:
     - Infrastructure as Code (e.g. Terraform, CloudFormation)
     - Amazon Web Services (AWS)
         - [Deploying a Spring Boot web application on Amazon EC2 instance](https://github.com/parasteh/CS476_GitTemplate/blob/main/AWS/deploy-springboot-app-on-aws.md)
+        - [Host a static website on an Amazon S3 Bucket] ()
 
 - Project Management Tools & Technologies
     - Agile methodologies (e.g. Scrum, Kanban)
